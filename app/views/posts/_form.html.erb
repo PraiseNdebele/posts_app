@@ -1,3 +1,28 @@
-<!-- Fill in code here to create a form that can be used for either creating or editing a post (see Rails Guides Getting Started section 5.12 if you need help) -->
+<%= form_for @post do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@post.errors.count, "error") %> prohibited
+        this post from being saved:
+      </h2>
+      <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+	<%= f.label :bru_name %>
+	<div><%= f.text_field :bru_name %></div> </br>
 
-<!-- BONUS! Add some error handling -->
+	
+	<%= f.label :title %>
+	<div><%= f.text_field :title %></div> </br>
+
+	
+	<%= f.label :body %>
+	<div><%= f.text_field :body %></div> </br>
+
+	<%= f.submit %>	
+<% end %>
