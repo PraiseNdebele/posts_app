@@ -39,4 +39,4 @@
 - Allow your to Create, Read, Update, and Destroy posts
 - Have your root set to your posts index
 
-**Push this app to a new repo in your GitHub called ```fill_in_the_blanks``` then submit the link via Piazza**
+**Push this app to a new repo in your GitHub called ```fill_in_the_blanks``` then submit the link via Piazza**# posts_app
